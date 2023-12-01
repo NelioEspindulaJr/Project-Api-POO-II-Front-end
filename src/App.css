@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
 .App {
   text-align: center;
 }
@@ -32,7 +34,246 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+nav div a.navbar-brand {
+  font-family: Jost, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  height: auto;
+  font-size: 24px;
+  line-height: 20px;
+  transition: 0.3s;
+  letter-spacing: 0.4em;
+  text-decoration: none;
+}
+
+header {
+  background-color: #d9d9d9;
+}
+
+div.body {
+  flex: 0 0 auto;
+}
+
+div.body .featured {
+  background-color: #DFE7DD;
+}
+
+.info {
+  flex-grow: 0;
+  box-sizing: border-box;
+  flex-shrink: 1;
+  border-left: #282c34 solid 2px;
+}
+
+.info {
+  color: #00000080;
+  font-weight: 600;
+  font-family: Jost;
+  text-align: left;
+  line-height: 18px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.featured-product-info h1 {
+  font-size: 36px;
+  font-family: Jost;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  max-width: 450px;
+}
+
+.featured-price {
+  color: #00000080;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-right: 4px;
+  letter-spacing: 0.1em;
+  font-family: Jost;
+}
+
+.max-width-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: inherit;
+  padding-right: 24px;
+  flex-direction: column;
+  max-width: max-content;
+}
+
+div.body .featured .max {
+  padding-left: inherit;
+  padding-right: 24px;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+  flex-grow: 0;
+  position: relative;
+  box-sizing: border-box;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+
+.icons * {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icons *.cart {
+  margin-right: 12px;
+}
+
+.icons *.user {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.button-group button {
+  color: #00000080;
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem 1rem;
+  position: relative;
+  box-sizing: border-box;
+  font-style: normal;
+  align-items: flex-start;
+  flex-shrink: 1;
+  font-weight: 500;
+  line-height: 14px;
+  padding-top: 12px;
+  transition: 0.3s;
+  border-color: #00000080;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 12px;
+  text-decoration: none;
+  font-family: Jost;
+}
+
+.featured-product-image {
+  flex-grow: 0;
+  max-width: 579px;
+  box-sizing: border-box;
+  max-height: 579px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-color: transparent;
+}
+
+.cards-container {
+  flex: 0 0 auto;
+  max-width: 1080px;
+  flex-wrap: wrap;
+  grid-gap: 32px;
+  margin-bottom: 64px;
+}
+
+.section-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.gallery {
+  display: grid;
+}
+
+.footer {
+  font-family: Jost;
+  flex: 0 0 auto;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  border-color: #E5E5E5;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  padding-top: 40px;
+  margin-top: 80px;
+}
+
+.footer * * h3 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  color: #000000cc;
+  font-size: 24px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.container-links {
+  grid-gap: 48px;
+}
+
+.container-links .categories-links {
+  flex: 0 0 auto;
+  margin-right: 96px;
+}
+
+.categories-links a {
+  text-decoration: none;
+}
+
+.categories-links span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+div.button-group button:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
 }

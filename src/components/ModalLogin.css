@@ -1,0 +1,100 @@
+* {
+    font-family: Jost;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.submit button {
+    color: #00000080;
+    padding: 0.5rem 1rem;
+    position: relative;
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    line-height: 14px;
+    padding-top: 12px;
+    transition: 0.3s;
+    border-color: #00000080;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 12px;
+    width: 20rem;
+    font-family: Jost;
+  }
+  
+.close-modal {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    border: none;
+    width: 1.6rem;
+    border-radius: 8px;
+    font-size: large;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.close-modal:hover {
+    background-color: #00000005;
+}
+
+  .modal-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .modal-container:focus-visible {
+    border: none;
+    outline: none;
+  }
+  
+  .modal-header {
+    text-align: center;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  p span.register {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: underline solid #00000080;
+  }
+
+  p span.register:hover,span.register:focus {
+    color: black;
+    text-decoration:underline black;
+  }
